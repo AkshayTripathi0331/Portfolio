@@ -1,0 +1,39 @@
+.resume {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.resume-title {
+  font-size: 2rem; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+}
+
+.resume-viewer {
+  width: 100%;
+  max-width: 800px; /* Adjust based on your layout */
+  margin: 0 auto;
+}
+
+.resume-viewer iframe {
+  width: 100%;
+  height: 80vh; /* Adjust based on your preference */
+  border: none;
+}
+
+.resume-download {
+  margin-top: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Adjust as needed */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

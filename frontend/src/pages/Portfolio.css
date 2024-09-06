@@ -1,0 +1,45 @@
+/* Portfolio.css */
+
+.experience-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.experience {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.experience h3 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.experience p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience {
+    padding: 15px;
+  }
+}

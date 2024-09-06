@@ -1,0 +1,83 @@
+/* Footer Styling */
+.footer-component {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-component .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.footer-component .footer-section {
+  flex: 1;
+  min-width: 200px;
+  color: #fff;
+}
+
+.footer-component .footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-component .footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.footer-component .footer-links ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+
+.footer-component .footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-component .footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-component .footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-component .footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-component .footer-social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-component .footer-social-icons a:hover {
+  color: #ff6600;
+}
+
+.footer-component .footer-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.footer-component .footer-bottom p {
+  font-size: 0.875rem;
+  margin: 0;
+}

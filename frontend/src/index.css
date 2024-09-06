@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../src/assets/background.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat:repeat; 
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header ul li {
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+.project-card, .blog-card {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
