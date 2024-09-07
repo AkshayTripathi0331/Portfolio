@@ -165,15 +165,16 @@ body {
 
 /* Projects Section */
 .projects-overview {
-  padding: 60px 20px;
-  background-color: #e9ecef;
+  padding: 40px 0px;
+  color: #fff;
+  background-color: #263036;
   text-align: center;
   margin: 5%
 }
 
 .projects-overview h2 {
   font-size: 2.5rem;
-  /* margin-bottom: 40px; */
+  margin-bottom: 20px;
 }
 
 .projects-grid {

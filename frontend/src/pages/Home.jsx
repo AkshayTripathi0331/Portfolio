@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import profilePic from "../assets/akshay-tripathi.png";
 import "./Home.css";
 import ProjectsList from "../components/ProjectsList";
+import { useScrollAnimation } from "../hooks/useScrollAnimation.jsx"; // Import the custom hook
 
 // Animation variants for reusable motion elements
 const fadeIn = {
@@ -29,17 +30,22 @@ const slideInRight = {
 // };
 
 function Home() {
+  const { ref: heroRef, controls: heroControls } = useScrollAnimation();
+  const { ref: aboutRef, controls: aboutControls } = useScrollAnimation();
+  const { ref: skillsRef, controls: skillsControls } = useScrollAnimation();
+  const { ref: projectsRef, controls: projectsControls } = useScrollAnimation();
+
   return (
     <div>
       <Header />
 
       {/* Hero Section */}
-      <section className="hero-section">
+      <section className="hero-section" ref={heroRef}>
         <div className="hero-content">
           <motion.div
             className="hero-text"
             initial="hidden"
-            animate="visible"
+            animate={heroControls}
             variants={fadeIn}
           >
             <h1>Akshay Tripathi</h1>
@@ -67,11 +73,11 @@ function Home() {
       </section>
 
       {/* About Me Section */}
-      <section id="about" className="about-section">
+      <section id="about" className="about-section" ref={aboutRef}>
         <motion.h2
           className="section-title"
           initial="hidden"
-          animate="visible"
+          animate={aboutControls}
           variants={fadeIn}
         >
           About Me
@@ -95,8 +101,9 @@ function Home() {
       {/* Skills Overview Section */}
       <motion.section
         className="skills-section"
+        ref={skillsRef}
         initial="hidden"
-        animate="visible"
+        animate={skillsControls}
         variants={fadeInUp}
       >
         <SkillsList />
@@ -106,8 +113,9 @@ function Home() {
       <section className="projects-overview">
         <motion.h2
           className="section-title"
+          ref={projectsRef}
           initial="hidden"
-          animate="visible"
+          animate={projectsControls}
           variants={fadeIn}
         >
           Explore My Work
