@@ -119,18 +119,21 @@ body {
   .hero-content {
     flex-direction: column;
     text-align: center;
+    width: 100%; /* Allow full width on smaller devices */
+    padding: 20px;
   }
 
   .hero-text h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Adjust font size for mobile */
   }
 
   .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Reduce paragraph font size */
   }
 
   .profile-pic {
-    width: 250px;
+    width: 220px; /* Adjust image size for mobile */
+    margin-top: 20px;
   }
 }
 
@@ -245,3 +248,8 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 20px; /* Reduce padding for mobile */
+  }
+}
