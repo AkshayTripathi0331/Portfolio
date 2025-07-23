@@ -40,6 +40,16 @@ function Portfolio() {
       ]
     },
     {
+      role: 'Technical Content Writer Intern',
+      company: 'GeeksforGeeks',
+      duration: 'Dec 2022 – June 2023',
+      points: [
+        'Authored 160+ technical articles covering algorithms, system design, and programming concepts.',
+        'Improved article quality, clarity, and reach on core computer science topics.',
+        'Contributed to the GeeksforGeeks community by curating reliable and beginner-friendly content.',
+      ]
+    },
+    {
       role: 'Web Developer Intern',
       company: 'Exposys Data Labs',
       duration: 'June 2022 – July 2022',
@@ -62,16 +72,10 @@ function Portfolio() {
         </motion.h1>
 
         {experiences.map((exp, index) => (
-          <motion.div
-            key={index}
-            className="experience"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.3 }}
-          >
+          <motion.div key={index} className="experience" ...>
             <h2>{exp.role}</h2>
             <h3>{exp.company} | {exp.duration}</h3>
-            
+        
             {exp.projects ? (
               exp.projects.map((proj, i) => (
                 <div key={i} className="project-block">
@@ -83,6 +87,12 @@ function Portfolio() {
                   </ul>
                 </div>
               ))
+            ) : exp.points ? (
+              <ul>
+                {exp.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             ) : (
               <p>{exp.description}</p>
             )}
