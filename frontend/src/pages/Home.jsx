@@ -49,7 +49,7 @@ function Home() {
             variants={fadeIn}
           >
             <h1>Akshay Tripathi</h1>
-            <p>Frontend Developer | Software Engineer | Tech Enthusiast</p>
+            <p>Generative AI Engineer | Software Engineer | Tech Enthusiast</p>
             <motion.a
               href="#about"
               className="cta-button"
