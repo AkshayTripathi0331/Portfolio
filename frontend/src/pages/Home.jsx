@@ -49,7 +49,7 @@ function Home() {
             variants={fadeIn}
           >
             <h1>Akshay Tripathi</h1>
-            <p>Generative AI Engineer | Software Engineer | Tech Enthusiast</p>
+            <p>Software Development Engineer | Generative AI + Backend Specialist</p>
             <motion.a
               href="#about"
               className="cta-button"
@@ -87,14 +87,14 @@ function Home() {
           animate="visible"
           variants={fadeInUp}
         >
-          I am Akshay Tripathi, a passionate software engineer with a focus on frontend development. I have extensive experience working with React.js, Next.js, Redux, and various modern web technologies.
+          I am a Software Development Engineer focused on Generative AI, specializing in building intelligent systems that solve real-world problems. I design and develop RAG systems, Agentic AI workflows, and LLM fine-tuning pipelines that power production-grade applications.
         </motion.p>
         <motion.p
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
         >
-          My background in electronics engineering, combined with my experience in web development, allows me to approach problems from a unique perspective.
+          With approximately 2.5 years of experience at Shorthills AI (joined July 2023), I work at the intersection of backend engineering and cutting-edge AI technologies. My expertise spans from building scalable FastAPI services to optimizing LLM inference with vLLM, creating hybrid search systems, and implementing agentic orchestration with AWS.
         </motion.p>
       </section>
 
@@ -120,8 +120,8 @@ function Home() {
         >
           Explore My Work
         </motion.h2>
-         <ProjectsList limit={3}/>
-        
+        <ProjectsList limit={3} />
+
         <motion.div
           className="view-more-container"
           style={{ textAlign: "center", marginTop: "20px" }}

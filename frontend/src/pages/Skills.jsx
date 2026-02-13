@@ -7,16 +7,18 @@ import Footer from '../components/Footer';
 function Skills() {
   const skillsRef = useRef(null);
   const skills = [
-    { name: 'React.js', level: 75 },
-    { name: 'Next.js', level: 70 },
-    { name: 'Redux', level: 70 },
-    { name: 'Node.js', level: 65 },
-    { name: 'JavaScript', level: 80 },
-    { name: 'HTML5', level: 90 },
-    { name: 'CSS3', level: 85 },
-    { name: 'Tailwind CSS', level: 70 },
-    { name: 'Bootstrap', level: 80 },
-    { name: 'Material-UI', level: 75 },
+    { name: 'Python', level: 90 },
+    { name: 'FastAPI', level: 85 },
+    { name: 'RAG Systems', level: 90 },
+    { name: 'LLM Fine-tuning', level: 85 },
+    { name: 'Prompt Engineering', level: 90 },
+    { name: 'MongoDB', level: 80 },
+    { name: 'Weaviate', level: 80 },
+    { name: 'Docker', level: 85 },
+    { name: 'Redis', level: 75 },
+    { name: 'Celery', level: 80 },
+    { name: 'LangChain', level: 85 },
+    { name: 'vLLM', level: 80 },
   ];
 
   useEffect(() => {
@@ -29,7 +31,7 @@ function Skills() {
         });
       },
       {
-        threshold: 0.5, 
+        threshold: 0.5,
       }
     );
 
@@ -67,7 +69,7 @@ function Skills() {
           ))}
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

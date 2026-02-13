@@ -1,8 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ToDoPic from "../assets/To-do-list.png";
-import RaeTourPic from "../assets/raebareli_tour.png";
-import AdvGamePic from "../assets/Adventure_game.png";
 import ToGoPlaces from "../assets/toGoPlaces.png";
 import QuizPage from "../assets/quiz page.png";
 import ShoppyCart from "../assets/ShoppyCart.png";
@@ -10,7 +7,7 @@ import TikTakToe from "../assets/tik-tak-toe.png";
 import InvestMate from "../assets/InvestMate.png"
 import Habitfy from "../assets/HabitList.png"
 import SnapNotes from "../assets/SanpNotes.png"
-import './ProjectsList.css'; 
+import './ProjectsList.css';
 
 // Animation variants
 const containerVariants = {
@@ -29,7 +26,7 @@ const containerVariants = {
 
 const projectVariants = {
   hidden: { opacity: 0, scale: 0.9 },
-  visible: { 
+  visible: {
     opacity: 1,
     scale: 1,
     transition: {
@@ -41,69 +38,48 @@ const projectVariants = {
 const projectList = [
   {
     id: 1,
-    title: 'myTodoList Application',
-    description: 'Task management web application built with React.js.',
-    link: 'https://todolist-qbdw.onrender.com/',
-    image: ToDoPic 
-  },
-  {
-    id: 2,
-    title: 'CityGuide Website',
-    description: 'Responsive website showcasing local attractions.',
-    link: 'https://akshaytripathi0331.github.io/raebareli.github.io/',
-    image: RaeTourPic
-  },
-  {
-    id: 3,
-    title: 'Adventure Game',
-    description: 'Fully functional game built using JavaScript and HTML.',
-    link: 'https://akshaytripathi0331.github.io/Adventure-Game/',
-    image: AdvGamePic
-  },
-  {
-    id: 4,
     title: 'PlacePicker',
     description: 'A location picker app using Google Maps API.',
     link: 'https://github.com/AkshayTripathi0331/PlacePicker',
     image: ToGoPlaces
   },
   {
-    id: 5,
+    id: 2,
     title: 'QuizPlay',
     description: 'A quiz application built for fun learning experiences.',
     link: 'https://github.com/AkshayTripathi0331/QuizPlay',
     image: QuizPage
   },
   {
-    id: 6,
+    id: 3,
     title: 'ShoppyCart',
     description: 'E-commerce platform with a smooth user experience.',
     link: 'https://github.com/AkshayTripathi0331/ShoppyCart',
     image: ShoppyCart
   },
   {
-    id: 7,
+    id: 4,
     title: 'Tic-tac-toe Game',
     description: 'Classic tic-tac-toe game built using JavaScript.',
     link: 'https://github.com/AkshayTripathi0331/Tic-tak-toe',
     image: TikTakToe
   },
   {
-    id: 8,
+    id: 5,
     title: 'InvestMate',
     description: 'An app to track and manage your investments.',
     link: 'https://github.com/AkshayTripathi0331/InvestMate',
     image: InvestMate
   },
   {
-    id: 9,
+    id: 6,
     title: 'Habitify',
     description: 'A habit tracking app with a clean UI.',
     link: 'https://github.com/AkshayTripathi0331/Habitify',
     image: Habitfy
   },
   {
-    id: 10,
+    id: 7,
     title: 'Snapnote',
     description: 'An app to take quick notes and organize them.',
     link: 'https://github.com/AkshayTripathi0331/Snapnote',

@@ -37,6 +37,41 @@
   line-height: 1.5;
 }
 
+.project-block {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+  text-align: left;
+}
+
+.project-block h4 {
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.project-tag {
+  display: inline-block;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.project-block ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project-block li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .experience {

@@ -9,51 +9,52 @@ function Portfolio() {
     {
       role: 'Software Development Engineer',
       company: 'Shorthills AI',
-      duration: 'July 2023 – Present',
+      duration: 'July 2023 – Present (~2.5 years)',
       projects: [
         {
-          name: 'Agent Assist',
+          name: 'Agent Assist (Agentic RAG System)',
+          tag: 'Private / Company Project',
           points: [
-            'Implemented AGENTIC RAG system to handle 16 agents, achieving 85% accuracy during UAT.',
-            'Integrated MongoDB Atlas, improving vector retrieval efficiency and boosting API response times by 30%.',
-            'Enhanced query processing with fine-tuned Meta-Llama-3-8B-Instruct.',
-            'Developed FastAPI endpoints for real-time query resolution.',
-            'Built async pipelines using Celery and Redis, increasing throughput by 40%.',
+            'Built hybrid RAG using MongoDB Atlas Vector Search with keyword scoring for improved retrieval accuracy',
+            'Developed intent engine with 100+ intents achieving 95%+ accuracy during UAT phase',
+            'Implemented RapidFuzz fallback classifier reducing fallback queries by 40%+',
+            'Designed Celery + Redis async pipelines processing 14+ knowledge sources',
+            'Dockerized FastAPI services with embeddings pipeline and Llama-3 inference optimization',
+            'Created AWS agentic orchestrator using Action Groups + Lambda, reducing manual effort by 70%',
           ],
         },
         {
-          name: 'BestViewsReviews',
+          name: 'GetHelp (Intent & Entity Platform)',
+          tag: 'Private / Company Project',
           points: [
-            'Automated content generation with Llama 3.8B, reducing manual workload by 40%.',
-            'Optimized FastAPI endpoints, cutting latency by 30%.',
-            'Migrated pipeline to Weaviate v4 + Redis, improving retrieval speed by 50%.',
-            'Fine-tuned models using vLLM, increasing snippet accuracy by 25%.',
+            'Engineered multi-intent classification system handling 10L+ queries per month',
+            'Designed 190+ hierarchical intents with multi-label inference capabilities',
+            'Fine-tuned Llama 3-8B Instruct model for domain-specific intent recognition',
+            'Generated and validated 15k+ synthetic training samples for model improvement',
           ],
         },
         {
-          name: 'Genysis',
+          name: 'BestViewsReviews (Review Intelligence System)',
+          tag: 'Private / Company Project',
           points: [
-            'Developed dynamic APIs for frontend-backend interaction.',
-            'Deployed services using Docker and Ngrok for smooth workflows.',
+            'Automated extraction of experience-rich review snippets from user-generated content',
+            'Implemented hybrid RAG using Weaviate v4 + Redis for efficient retrieval',
+            'Fine-tuned Llama 3 8B on 10k+ samples achieving +25% accuracy improvement',
+            'Optimized inference pipeline using vLLM reducing latency by 30%',
+            'Enhanced Weaviate hybrid search achieving 50% faster retrieval speeds',
+          ],
+        },
+        {
+          name: 'Genysis (Genetic History Assistant)',
+          tag: 'Private / Company Project',
+          points: [
+            'Reduced genetic consultation time by 20–30 minutes through intelligent automation',
+            'Built lightweight RAG system with smart chunking for medical documentation',
+            'Designed prompt flows for structured patient interview guidance',
+            'Integrated PedigreeJS for interactive family-tree diagram generation',
           ],
         },
       ]
-    },
-    {
-      role: 'Technical Content Writer Intern',
-      company: 'GeeksforGeeks',
-      duration: 'Dec 2022 – June 2023',
-      points: [
-        'Authored 160+ technical articles covering algorithms, system design, and programming concepts.',
-        'Improved article quality, clarity, and reach on core computer science topics.',
-        'Contributed to the GeeksforGeeks community by curating reliable and beginner-friendly content.',
-      ]
-    },
-    {
-      role: 'Web Developer Intern',
-      company: 'Exposys Data Labs',
-      duration: 'June 2022 – July 2022',
-      description: 'Built responsive websites with Node.js backend. Designed RESTful APIs with JWT & OAuth for secure user auth.'
     },
   ];
 
@@ -72,14 +73,21 @@ function Portfolio() {
         </motion.h1>
 
         {experiences.map((exp, index) => (
-          <motion.div key={index} className="experience" ...>
+          <motion.div
+            key={index}
+            className="experience"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+          >
             <h2>{exp.role}</h2>
             <h3>{exp.company} | {exp.duration}</h3>
-        
+
             {exp.projects ? (
               exp.projects.map((proj, i) => (
                 <div key={i} className="project-block">
                   <h4 style={{ marginTop: '10px' }}>{proj.name}</h4>
+                  {proj.tag && <span className="project-tag">{proj.tag}</span>}
                   <ul>
                     {proj.points.map((point, j) => (
                       <li key={j}>{point}</li>
@@ -100,7 +108,7 @@ function Portfolio() {
         ))}
       </section>
       <Footer />
-    </div>
+    </div >
   );
 }
 
